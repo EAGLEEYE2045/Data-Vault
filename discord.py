@@ -17,9 +17,9 @@ Notes / limits:
 import os
 import httpx
 
-from .base import StorageBackend, StoredRef
+from base import StorageBackend, StoredRef
 
-DISCORD_WEBHOOK_URL = os.environ.get("DISCORD_WEBHOOK_URL", "")
+DISCORD_WEBHOOK_URL = "https://discord.com/api/webhooks/1536799481620733972/ahoxTG_WnWyoUDyallWItoqfjMX1OKd-OgG6JPp_foNYJwKOL8EEG1Km9lDiPKnsGCBN"
 
 
 class DiscordBackend(StorageBackend):
