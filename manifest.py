@@ -27,7 +27,8 @@ class FileRecord:
 
 class Manifest:
     def __init__(self, db_path: str = DB_PATH):
-        self.conn = sqlite3.connect(db_path)
+        # self.conn = sqlite3.connect(db_path)
+        self.conn = sqlite3.connect(db_path, check_same_thread=False)
         self.conn.execute(
             """
             CREATE TABLE IF NOT EXISTS files (
